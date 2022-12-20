@@ -12,6 +12,6 @@ while
 putchar(c);
 c++;
 }
-putchar ('\n + '0');
+putchar ('\n' + '0');
 return (0);
 }
