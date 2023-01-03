@@ -10,15 +10,19 @@
 */
 char *_strchr(char *s, char c)
 {
-while (*s)
+while (*s != '\0')
 {
-if (*s != c)
+if (*s == c)
+return (s);
 s++;
-else
-return (s);
 }
-if (c == '\0')
+/**
+* if c is '\0', you should return
+* the pointer to the '\0' of the
+* string s
+*/
+if (*s == c)
 return (s);
-return (NULL);
-} /**Sibongile Magwaza*/
-
+/*return null if not found*/
+return ('\0');
+}
