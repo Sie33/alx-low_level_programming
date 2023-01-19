@@ -43,6 +43,8 @@ return (a / b);
 
 /**
 * op_mod - gets the reminder of the division between @a and @b
+* @a: input 1
+* @b: input 2
 * Return: the remainder
 */
 int op_mod(int a, int b)
